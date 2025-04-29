@@ -12,11 +12,12 @@ import React, { useState, useEffect } from "react";
 const Home: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
-
+  const [isScrolled, setIsScrolled] = useState(false); 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const sections = document.querySelectorAll("section");
+      setIsScrolled(scrollPosition > 50);
 
       sections.forEach((section) => {
         const sectionTop = section.offsetTop - 100;
@@ -54,7 +55,7 @@ const Home: React.FC = () => {
   return (
     <div className="bg-[#121212] text-white min-h-screen">
       {/* Navbar */}
-      <nav className="fixed w-full z-50 py-6 px-8 md:px-16 flex justify-between items-center transition-all duration-300">
+      <nav className={`fixed w-full z-50 py-6 px-8 md:px-16 flex justify-between items-center transition-all duration-300 ${isScrolled? 'bg-black/70 ' : 'bg-transparent'}`}>
       <div className="logo">
         <Image src='/logo.png' alt="logo" width={20} height={20}/>
       </div>
@@ -148,7 +149,7 @@ const Home: React.FC = () => {
             LET&apos;S CONNECT
           </Link>
         </div>
-        <div className="absolute right-0 top-0 h-full md:w-3/5 w-full  md:block">
+        <div className="absolute right-0 top-ش0 h-full md:w-3/5 w-full  md:block">
           <Image
             src="/saeda.png"
             alt="Saeda Mughari"

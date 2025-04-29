@@ -1,4 +1,5 @@
 const Experience: React.FC = () => {
+  
   return (
     <section id="experience" className="py-20 px-8 md:px-16 bg-[#1A1A1A]">
       <h2 className="text-4xl font-bold mb-16 text-center">Work Experience</h2>

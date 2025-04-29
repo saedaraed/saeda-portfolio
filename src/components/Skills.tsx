@@ -132,7 +132,7 @@ const Skills: React.FC = () => {
                 <i
                   className={`${skill.icon} text-2xl mr-3 "text-gray-400" `}
                 ></i>
-                <h3 className={`font-semibold "text-white"`}>{skill.name}</h3>
+                <h3 className={`font-semibold text-white md:text-lg text-sm`}>{skill.name}</h3>
               </div>
               <div className="w-full h-2 rounded-full bg-gray-700">
                 <div
