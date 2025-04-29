@@ -55,9 +55,9 @@ const Home: React.FC = () => {
     <div className="bg-[#121212] text-white min-h-screen">
       {/* Navbar */}
       <nav className="fixed w-full z-50 py-6 px-8 md:px-16 flex justify-between items-center transition-all duration-300">
-        <div className="text-2xl font-light text-gray-300">
-          <span className="font-bold text-white">S</span>M
-        </div>
+      <div className="logo">
+        <Image src='/logo.png' alt="logo" width={20} height={20}/>
+      </div>
 
         <div className="hidden md:flex space-x-8">
           {[
@@ -148,17 +148,16 @@ const Home: React.FC = () => {
             LET&apos;S CONNECT
           </Link>
         </div>
-        <div className="absolute right-0 top-0 h-full w-3/5 hidden md:block">
+        <div className="absolute right-0 top-0 h-full md:w-3/5 w-full  md:block">
           <Image
             src="/saeda.png"
             alt="Saeda Mughari"
             fill
-            className="object-cover object-center filter grayscale"
-            style={{
-              clipPath: "polygon(10% 0, 100% 0, 100% 100%, 0% 100%)",
-            }}
+            className="object-cover object-center filter grayscale clip-custom"
+          
           />
-          <div className="absolute inset-0 bg-[#121212] opacity-20"></div>
+          <div className="absolute inset-0 bg-[#121212] opacity-50 md:opacity-20"></div>
+          
         </div>
       </section>
 

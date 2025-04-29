@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 interface FooterProps {
@@ -8,9 +9,8 @@ const Footer:React.FC<FooterProps> = ({ scrollToSection })=>{
     return(
         <footer className="py-8 px-8 md:px-16 bg-[#090909] text-center">
         <div className="max-w-5xl mx-auto">
-          <div className="text-2xl font-light text-gray-300 mb-6">
-            <span className="font-bold text-white">S</span>M
-          </div>
+          <div className="flex justify-center mb-8">
+<Image src="/logo.png" alt="logo" width={20} height={20}/>          </div>
 
           <div className="flex justify-center space-x-6 mb-6">
             <Link
