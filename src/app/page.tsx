@@ -143,7 +143,7 @@ const Home: React.FC = () => {
             </p>
           </div>
           <Link
-            href="https://wa.me/970595474936"
+            href="https://wa.me/970595474936" target="_blank"
             className="border border-gray-600 hover:border-white px-6 py-3 text-sm tracking-wider transition-all duration-300 cursor-pointer !rounded-button whitespace-nowrap"
           >
             LET&apos;S CONNECT
