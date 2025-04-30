@@ -143,13 +143,13 @@ const Home: React.FC = () => {
             </p>
           </div>
           <Link
-            href="mailto:saedaraed19@gmail.com"
+            href="https://wa.me/970595474936"
             className="border border-gray-600 hover:border-white px-6 py-3 text-sm tracking-wider transition-all duration-300 cursor-pointer !rounded-button whitespace-nowrap"
           >
             LET&apos;S CONNECT
           </Link>
         </div>
-        <div className="absolute right-0 top-ش0 h-full md:w-3/5 w-full  md:block">
+        <div className="absolute right-0 top-0 h-full md:w-3/5 w-full  md:block">
           <Image
             src="/saeda.png"
             alt="Saeda Mughari"
